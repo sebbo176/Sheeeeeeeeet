@@ -37,13 +37,12 @@ class CustomActionSheet: ActionSheet {
 private extension CustomActionSheet {
     
     static func items(for options: [FoodOption], buttonTapAction: @escaping (UIButton) -> ()) -> [ActionSheetItem] {
-        let type = MyCustomViewCell.self
-        let item = ActionSheetCustomItem(cellType: type) { cell in
-            cell.buttonTapAction = buttonTapAction
+        let type = ReaderSettingsLikeCell.self
+        let item = ActionSheetCustomItem(cellType: type) { _ in
         }
         
         return [
-            ActionSheetTitle(title: "Tap a button"),
+//            ActionSheetTitle(title: "I Am a title"),
             item,
             cancelButton
         ]
