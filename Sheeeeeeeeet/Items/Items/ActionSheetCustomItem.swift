@@ -41,7 +41,7 @@ public class ActionSheetCustomItem<T: ActionSheetCustomItemCell>: ActionSheetIte
     // MARK: - Properties
     
     public override var height: CGFloat { return T.defaultSize.height }
-    
+   
     public let cellType: T.Type
     
     public let setupAction: SetupAction

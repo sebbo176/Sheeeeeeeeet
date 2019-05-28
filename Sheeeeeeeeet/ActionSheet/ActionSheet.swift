@@ -249,7 +249,7 @@ open class ActionSheet: UIViewController {
     }
     
     open func refreshItems() {
-        itemsTableView?.tableFooterView = createFooter()
+//        itemsTableView?.tableFooterView = createFooter()
         itemsTableViewHeight?.constant = itemsHeight
     }
     
